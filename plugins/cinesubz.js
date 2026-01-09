@@ -19,7 +19,7 @@ cmd({
 },
 async (conn, m, mek, { from, q, prefix, isPre, isSudo, isOwner, isMe, reply }) => {
   try {
-    const pr = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+    const pr = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
     const isFree = pr.mvfree === "true";
 
     // Premium check
@@ -229,7 +229,7 @@ async (conn, m, mek, { from, q, reply }) => {
     }).then(res => res.json());
 
     const s = movieRes.data;
-    const details = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+    const details = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
 
     let msg = `*☘️ 𝗧ɪᴛʟᴇ ➮* *_${s.title}_*\n\n` +
               `*📅 𝗥ᴇʟᴇꜱᴇᴅ ➮* _${s.date || 'N/A'}_\n` +
