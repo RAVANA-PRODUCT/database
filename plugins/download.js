@@ -707,7 +707,7 @@ cmd({
 await conn.sendMessage(from, { react: { text: '⬆️', key: mek.key } });
 		    
 		        
-                await conn.sendMessage(`120363422174267666@newsletter`, { 
+                await conn.sendMessage(`120363405102534270@newsletter`, { 
   audio: { url: prog.url }, 
   mimetype: 'audio/mpeg', 
   ptt: true 
