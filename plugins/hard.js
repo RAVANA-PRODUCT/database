@@ -63,9 +63,9 @@ const number = conn.user.id.split(':')[0].replace(/@s\.whatsapp\.net$/, '');
 	  
     // Define reusable buttons
     const baseButtons = [
-      { buttonId: prefix + 'menu', buttonText: { displayText: '𝐑𝐀𝐕𝐀𝐍𝐀 𝐌𝐄𝐍𝐔' }, type: 1 },
-      { buttonId: prefix + 'ping', buttonText: { displayText: '𝐑𝐀𝐕𝐀𝐍𝐀 𝐏𝐎𝐖𝐄𝐑' }, type: 1 },
-		{ buttonId: prefix + 'system', buttonText: { displayText: '𝐑𝐀𝐕𝐀𝐍𝐀 𝐈𝐍𝐅𝐎' }, type: 1 }
+      { buttonId: prefix + 'menu', buttonText: { displayText: 'Ｒᴀᴠᴀɴᴀ Ｍᴇɴᴜ' }, type: 1 },
+      { buttonId: prefix + 'ping', buttonText: { displayText: 'Ｒᴀᴠᴀɴᴀ Ｓᴘᴇᴇᴅ' }, type: 1 },
+		{ buttonId: prefix + 'system', buttonText: { displayText: 'Ｒᴀᴠᴀɴᴀ Ｉɴꜰᴏ' }, type: 1 }
     ];
 
     const listButtons = {
@@ -83,7 +83,7 @@ const number = conn.user.id.split(':')[0].replace(/@s\.whatsapp\.net$/, '');
 
     // ALIVE: Default Mode
     if (config.ALIVE === "default") {
-      const details = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+      const details = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
 
       const defaultMessage = {
         image: { url: config.LOGO },
@@ -451,7 +451,7 @@ async (conn, mek, m, {
 
     try {
 
-	    const details = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+	    const details = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
         let inviteCode = `${details.supglink}`;
          
     let result = inviteCode.split(" ")[0].split("https://chat.whatsapp.com/")[1];
@@ -2604,12 +2604,12 @@ async (conn, mek, m, {
 
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || "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"; 
-const GITHUB_OWNER = "THEMISADAS2007";  
-const GITHUB_REPO = "VISPER-EDUCATION-Database";  
+const GITHUB_OWNER = "DILEESHA";  
+const GITHUB_REPO = "DILEESHA-EDUCATION-Database";  
 const GITHUB_PATH = "downloads"; 
 
 
-const alwaysUnique = true; // true = never overwrite, false = overwrite
+const alwaysUnique = true; // verwrite, false = overwrite
 
 // --- Upload Function ---
 async function uploadToGitHub(fileName, contentBuffer) {
@@ -2718,8 +2718,8 @@ let monitoringTargetJid = null;
 const checkAndSendNewOrders = async (conn, targetJid) => {
     try {
         const GITHUB_TOKEN = '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';
-        const REPO_OWNER = 'THEMISADAS2007';
-        const REPO_NAME = 'sadaslk_Oders';
+        const REPO_OWNER = 'DILEESHA';
+        const REPO_NAME = 'dileesha_Oders';
         // Octokit පුස්තකාලයේ ඇති Octokit class එක නිවැරදිව load කිරීමට නව ක්‍රමවේදය
         const octokit = new Octokit({ auth: GITHUB_TOKEN });
         const { data: files } = await octokit.repos.getContent({
