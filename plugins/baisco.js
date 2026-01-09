@@ -20,7 +20,7 @@ cmd({
 },
 async (conn, m, mek, { from, isPre, q, prefix, isMe, isSudo, isOwner, reply }) => {
 try {
-    const pr = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+    const pr = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
     const isFree = pr.mvfree === "true";
 
     if (!isFree && !isMe && !isPre) {
@@ -168,7 +168,7 @@ async (conn, m, mek, { from, q, reply }) => {
     const movie = sadas.data.movieInfo;
     let detailsVar = { chlink: "" };
     try {
-        detailsVar = (await axios.get('https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json')).data;
+        detailsVar = (await axios.get('https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json')).data;
     } catch (e) {}
 
     let msg = `*☘️ 𝗧ɪᴛʟᴇ ➮* *_${movie.title || 'N/A'}_*\n\n` +
