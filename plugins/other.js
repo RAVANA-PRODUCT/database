@@ -25,7 +25,7 @@ async (conn, mek, m, {
 }) => {
     try {
         
-        const response = await axios.get("https://raw.githubusercontent.com/Ravana-LK/databases/refs/heads/main/main_var.json");
+        const response = await axios.get("https://raw.githubusercontent.com/RAVANA-PRODUCT/database/refs/heads/main/main_var.json");
         const details = response.data;
 
         const result = `*🎯 𝐑𝐀𝐕𝐀𝐍𝐀-𝐗-𝐌𝐃 🎯*
